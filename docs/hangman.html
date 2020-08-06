@@ -3,15 +3,39 @@
     <meta charset="UTF-8">
     <title>Baby Cowan</title>
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <script
     src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
     crossorigin="anonymous"></script>   
      <script src="assets/javascript/apps.js"></script>
 </head>
-<body background="">
+<body>
+    <header>
+        <h1 class="offset-lg-4 col-lg-4 mt-5 font-weight-bold text-primary text-center">What's His Name?</h1>
+    </header>
+    <section class="offset-lg-2 col-lg-8 mt-5">
+        <div id=leftside class="border border-info text-center:">
+            <div>
+                <img src="assets/images/nbalogo.jpg" id=picture>
+            </div>
+            <div>
+                <h3>Introducing</h3>
+                <div id=chosenName></div>
+            </div>
+        </div>
+        <div id="rightside">
+            <div>
+                <h3>Guesses Left</h3>
+                    <h4 id=guesses></h4>
+            </div>
+            <div>
+                <h3>Letters Guessed</h3>
+                <h4 id=usedletter ></h4>
+            </div>
+        </div>
 
+    </section>
 </body>
 </html>

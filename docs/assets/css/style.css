@@ -1,7 +1,15 @@
 body {
-    background-color:  #b3d9ff
+    background-color:  #b3d9ff; 
 }
 
 #title {
     font-family: 'Chilanka', cursive;
+}
+
+#yoda {
+    border: 10px lightgoldenrodyellow solid;
+}
+
+button:hover {
+    color: lightgoldenrodyellow;
 }
