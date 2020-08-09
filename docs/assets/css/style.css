@@ -13,3 +13,12 @@ body {
 button:hover {
     color: lightgoldenrodyellow;
 }
+
+#rightside {
+    border: 10px lightgoldenrodyellow solid;
+}
+
+#leftside {
+    border: 10px lightgoldenrodyellow solid;
+    font-size: 30px;
+}
