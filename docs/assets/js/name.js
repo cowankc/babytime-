@@ -1,7 +1,7 @@
 $( document ).ready(function() {
     //variables and arrays
     const playerList = ["leopold"]
-    const counter = 8; 
+    const counter = 6; 
     let wins = 0;
     let stop = false; 
     let userChoice = []; 
@@ -50,10 +50,10 @@ $( document ).ready(function() {
                 chosenWord[i] = letter
                 correctLetter = true
                 if (chosenWord.join("") === compChoice) {
-                    wins++
                     stop = true
-                    updateScore ()
-                    setTimeout(restart,1000)
+                    $("#game").remove();
+                    $("#middle").prepend().html('<h2>Leopold Kevin Cowan!</h2>');
+                    $("#midpic").prepend().html('<img src="assets/images/dance.gif"></img>');
                 }
             }
         }
@@ -66,8 +66,10 @@ $( document ).ready(function() {
         if (guess === 0) {
             chosenWord = compChoice.split()
             stop = true
-            setTimeout(restart, 1000)
-            alert("Looks Like you'll Have too wait!")
+            $("#game").remove();
+            $("#middle").prepend().html('<h2>You Lose! Guess you will learn later!</h2>');
+            $("#midpic").prepend().html('<img src="assets/images/cry.gif"></img>');
+            
         }
     }
 

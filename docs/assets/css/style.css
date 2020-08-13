@@ -1,9 +1,11 @@
 body {
-    background-color:  #b3d9ff; 
+    background-color:  #b6dbff; 
 }
 
-#title {
+.title {
     font-family: 'Chilanka', cursive;
+    font-size: 50px;
+    text-decoration: underline;
 }
 
 #yoda {
@@ -16,11 +18,13 @@ button:hover {
 
 #rightside {
     border: 10px lightgoldenrodyellow solid;
+    height: 200px;
 }
 
 #leftside {
     border: 10px lightgoldenrodyellow solid;
     font-size: 30px;
+    height: 200px;
 }
 
 section {
@@ -33,11 +37,7 @@ img {
 #trivia {
     font-size: 34px
 }
-#title {
-    font-size: 50px;
-    text-decoration: underline;
 
-}
 #answers {
     font-size: 26px;
     color: blue;
