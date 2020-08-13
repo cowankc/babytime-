@@ -7,13 +7,21 @@ $( document ).ready(function() {
       let wrongCount = 0;
       let questionNumber = 0;
       let questionArray = [
+        {
+            question:"How did daddy learn about me? ",
+            wrong1: " Through a text from mommy " ,
+            wrong2: " Finding the positive test ",
+            answer: " Leia told him ",
+            wrong3: " Mommy left a note on daddy's pillow ",
+            image: "<img class='corPics' src='assets/images/leia.jpg'>",
+        },
       {
           question:"When I grow up I am going to be ",
           wrong1: " A doctor " ,
           wrong2: " A profesional athlete",
-          answer: " an astronaut ",
+          answer: " An astronaut ",
           wrong3: " President ",
-          image: "<img src='assets/images/space.gif'>",
+          image: "<img class='corPics' src='assets/images/space.gif'>",
       },
       {
           question: "Who is my favorite cuddle buddy?",
@@ -21,7 +29,7 @@ $( document ).ready(function() {
           answer: "Pity Pat",
           wrong2: "Mama",
           wrong3: "Leia",
-          image: "<img src='assets/images/pity.jpg'>",
+          image: "<img class='corPics' src='assets/images/pity.jpg'>",
       },
       {
           question: "What is my favorite snack?",
@@ -29,7 +37,7 @@ $( document ).ready(function() {
           wrong2: "chocolate",
           wrong1: "pringles",
           wrong3: "cashews",
-          image: "<img src='assets/images/icecream.jpg'>",
+          image: "<img class='corPics' src='assets/images/icecream.jpg'>",
       },
       {
           question: "What's my favorite TV show?",
@@ -37,7 +45,7 @@ $( document ).ready(function() {
           wrong2: "That 70's show",
           wrong1: "Community",
           wrong3: "Hell's Kitchen",
-          image: "<img src='assets/images/gg.jpg'>",
+          image: "<img class='corPics' src='assets/images/gg.jpg'>",
       },
       {
           question: "What's my favorite outdoor activity?",
@@ -45,7 +53,7 @@ $( document ).ready(function() {
           wrong2: "hiking",
           answer: "swimming",
           wrong3: "skiing",
-          image: "<img src='assets/images/swim.gif'>",
+          image: "<img class='corPics' src='assets/images/swim.gif'>",
       },
       
   ]
@@ -68,7 +76,7 @@ $( document ).ready(function() {
       let answerArray = [questionArray[questionNumber].answer, questionArray[questionNumber].wrong1, questionArray[questionNumber].wrong2, questionArray[questionNumber].wrong3]
       answerArray.sort(function(a,b){return 0.5 - Math.random()});
       return answerArray.forEach(element => {
-      $("#answers").append("<div class='options'>" + element + "</div>")
+      $("#answers").append("<div class='options m-2'>" + element + "</div>")
       });
     }
   
@@ -87,8 +95,8 @@ $( document ).ready(function() {
       $("div.options:not(:contains('"+correct+"'))").on("click", function() {
           $("#answers").empty();
           $("#trivia").empty();
-          $("#trivia").append("Wrong! Correct Answer was, " + correct)
-          $("#pics").prepend("<img src='assets/images/wrong.gif'>");
+          $("#trivia").append("Wrong! Correct answer was, " + correct)
+          $("#pics").prepend("<div style='border: 10px lightgoldenrodyellow solid;'><img src='assets/images/wrong.gif'></div>");
           wrongCount++;
           console.log(wrongCount);
           questionNumber++
@@ -106,7 +114,7 @@ $( document ).ready(function() {
   //function to bring next question and start game over//
   
   let nextQuestion = function() {
-      if (questionNumber <= 4) {
+      if (questionNumber <= 5) {
       time = 11;
       $("#trivia").empty();
       $("#pics").empty();

@@ -12,6 +12,11 @@ body {
     border: 10px lightgoldenrodyellow solid;
 }
 
+.corPics {
+    border: 10px lightgoldenrodyellow solid;
+
+}
+
 button:hover {
     color: lightgoldenrodyellow;
 }
