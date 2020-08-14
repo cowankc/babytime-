@@ -53,7 +53,7 @@ $( document ).ready(function() {
                     stop = true
                     $("#game").remove();
                     $("#middle").prepend().html('<h2>Leopold Kevin Cowan!</h2>');
-                    $("#midpic").prepend().html('<img src="assets/images/dance.gif"></img>');
+                    $("#midpic").prepend().html('<img src="assets/images/dance.gif" class="corPics"></img>');
                 }
             }
         }
@@ -68,7 +68,7 @@ $( document ).ready(function() {
             stop = true
             $("#game").remove();
             $("#middle").prepend().html('<h2>You Lose! Guess you will learn later!</h2>');
-            $("#midpic").prepend().html('<img src="assets/images/cry.gif"></img>');
+            $("#midpic").prepend().html('<img src="assets/images/cry.gif" class="corPics"></img>');
             
         }
     }
