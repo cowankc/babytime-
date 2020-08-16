@@ -96,7 +96,8 @@ $( document ).ready(function() {
           $("#answers").empty();
           $("#trivia").empty();
           $("#trivia").append("Wrong! Correct answer was, " + correct)
-          $("#pics").prepend("<div style='border: 10px lightgoldenrodyellow solid;'><img src='assets/images/wrong.gif'></div>");
+          $("#pics").prepend("<div class='mt-2' style='border: 10px lightgoldenrodyellow solid;'><img src='assets/images/wrong.gif'></div>");
+          $("#pics").prepend(questionArray[questionNumber].image);
           wrongCount++;
           console.log(wrongCount);
           questionNumber++
